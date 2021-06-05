@@ -51,7 +51,7 @@ mongoose
 // });
 
 // Production Server
-app.listen(process.env.PORT || 3000, () => {
-  let port = server.address().port;
+var server = app.listen(process.env.PORT || 3000, () => {
+  var port = server.address().port;
   console.log('Server is running on' + port);
 });
